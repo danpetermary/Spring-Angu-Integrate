@@ -1,0 +1,15 @@
+<h1> Login Page </h1>
+<form name="mylogin" (submit)="myValidate()"> 
+   
+    Use Name:
+    <input type="text" matInput class="username" [formControl]="userName">
+     <br> Password:
+    <input type="text" matInput class="password" [formControl]="userPassword">
+    
+    <input type=submit value="Submit">
+  
+   <mat-error *ngIf="submitMessage" class="error-message">{{submitMessage}}</mat-error>
+  
+  
+  </form> 
+  
